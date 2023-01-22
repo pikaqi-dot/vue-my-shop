@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <v-header :seller="seller"></v-header>
-    <router-view></router-view>
+    haha
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
@@ -19,7 +20,7 @@ export default {
     };
   },
   created() {
-    axios.get("data.json").then((res) => {
+    axios.get("static/data.json").then((res) => {
       this.seller = res.data.seller;
       console.log(this.seller);
     });
