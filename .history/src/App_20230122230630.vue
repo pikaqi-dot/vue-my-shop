@@ -1,4 +1,11 @@
-
+<!--
+ * @Descripttion:
+ * @version:
+ * @Author: sueRimn
+ * @Date: 2023-01-22 22:50:31
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2023-01-22 23:06:28
+-->
 <template>
   <div id="app">
     <v-header :seller="seller"></v-header>
@@ -21,7 +28,7 @@ export default {
     };
   },
   created() {
-    axios.get("./static/data.json").then((res) => {
+    axios.get("static/data.json").then((res) => {
       this.seller = res.data.seller;
       console.log(this.seller);
     });
