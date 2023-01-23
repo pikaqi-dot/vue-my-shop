@@ -2,7 +2,6 @@
 <template>
   <div id="app">
     <v-header :seller="seller"></v-header>
-    haha
     <router-view></router-view>
   </div>
 </template>

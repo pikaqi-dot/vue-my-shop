@@ -14,10 +14,7 @@
         </div>
         <div class="supports" v-if="seller.supports">
           <div class="supports_desc">
-            <span
-              class="icon"
-              :class="iconClassMap[seller.supports[0].type]"
-            ></span>
+            <span class="icon" :class="iconClassMap[seller.supports[0].type]"></span>
             <span class="text">{{ seller.supports[0].description }}</span>
           </div>
         </div>
@@ -40,11 +37,7 @@
         <div class="detail-wrapper clearfix">
           <div class="detail-main">
             <h1 class="name">{{ seller.name }}</h1>
-            <i
-              class="iconfont icon-guanbi"
-              @click="hideDetail()"
-              style="width:100px,height:100px"
-            ></i>
+            <div class="detail-close"><i class="iconfont icon-guanbi" @click="hideDetail()"></i></div>
           </div>
         </div>
       </div>
