@@ -2,7 +2,6 @@
   <div class="star" :class="starType">
     <span v-for="itemClass in itemClasses" :class="itemClass" class="star-item"></span>
   </div>
-
 </template>
 <script>
 const LENGTH = 5
@@ -36,7 +35,7 @@ export default {
       while (result.length < LENGTH) {
         result.push(CLS_OFF)
       }
-      console.log('itemClasses', result)
+      console.log('itemClasses',result)
       return result;
     }
 
@@ -47,5 +46,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import 'stylus/index.styl';
+
+@import './stylus/index.styl';
 </style>

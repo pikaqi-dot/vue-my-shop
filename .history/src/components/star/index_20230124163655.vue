@@ -2,7 +2,11 @@
   <div class="star" :class="starType">
     <span v-for="itemClass in itemClasses" :class="itemClass" class="star-item"></span>
   </div>
-
+  <div class="title">
+              <div class="line"> </div>
+              <div class="text">优惠信息</div>
+              <div class="line"></div>
+            </div>
 </template>
 <script>
 const LENGTH = 5
@@ -36,7 +40,7 @@ export default {
       while (result.length < LENGTH) {
         result.push(CLS_OFF)
       }
-      console.log('itemClasses', result)
+      console.log('itemClasses',result)
       return result;
     }
 

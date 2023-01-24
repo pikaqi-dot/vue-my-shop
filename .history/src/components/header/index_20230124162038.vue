@@ -40,12 +40,7 @@
             <div class="star-wrapper">
               <star :size="48" :score="seller.score"></star>
             </div>
-            <div class="title">
-              <div class="line"> </div>
-              <div class="text">优惠信息</div>
-              <div class="line"></div>
-            </div>
-            <div class="detail-close"><i class="iconfont icon-guanbi" @click="hideDetail()" style="color:#C1CDC1"></i></div>
+            <div class="detail-close"><i class="iconfont icon-guanbi" @click="hideDetail()" style="color:"></i></div>
           </div>
         </div>
       </div>

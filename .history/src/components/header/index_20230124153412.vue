@@ -40,12 +40,7 @@
             <div class="star-wrapper">
               <star :size="48" :score="seller.score"></star>
             </div>
-            <div class="title">
-              <div class="line"> </div>
-              <div class="text">优惠信息</div>
-              <div class="line"></div>
-            </div>
-            <div class="detail-close"><i class="iconfont icon-guanbi" @click="hideDetail()" style="color:#C1CDC1"></i></div>
+            <div class="detail-close"><i class="iconfont icon-guanbi" @click="hideDetail()"></i></div>
           </div>
         </div>
       </div>
@@ -85,12 +80,12 @@ export default {
     },
     hideDetail() {
       this.detailShow = false;
-      console.log('this.detailShow',this.detailShow);
+      console.log(this.detailShow);
     },
   },
 };
 </script>
 
 <style lang="stylus" scoped>
-@import 'stylus/index.styl';
+@import './stylus/index.styl';
 </style>

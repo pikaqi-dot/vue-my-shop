@@ -2,6 +2,7 @@
   <div class="star" :class="starType">
     <span v-for="itemClass in itemClasses" :class="itemClass" class="star-item"></span>
   </div>
+  </div>
 
 </template>
 <script>

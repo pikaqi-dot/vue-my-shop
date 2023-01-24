@@ -2,7 +2,6 @@
   .star-item
     display: inline-block
     background-repeat: no-repeat
-  
   &.star-48
     .star-item
       width 20px
@@ -10,11 +9,15 @@
       margin-right 22px
       background-size 100% 100%
       &:last-child
-        margin-right 0
+        margin-right 0px
       &.on
         background-image: url('img/star36_on@2x.png')
       &.half
-        background-image: url('img/star36_half@2x.png')
+        bg-image('img/star36_on@2x.png')
       &.off
-       background-image: url('img/star36_off@2x.png')
+        bg-image('img/star36_on@2x.png')
+    
+
   
+
+
