@@ -2,13 +2,11 @@
   position: relative;
   blur: 10px;
   overflow: hidden;
-
   .content-wrapper {
     position: relative;
     display: flex;
     padding: 24px 12px 18px 24px;
     font-size: 12px;
-
     .avatar {
       img {
         border-radius: 10px;
@@ -137,10 +135,103 @@
     height: 100%;
     background: rgba(7, 17, 27, 0.8);
     backdrop-filter: blur(10px);
-    .detail-main{
-       color: #6b8a0c
-       height:160px
-       width:100%
+    .detail-wrapper{
+      min-height 90%
+      width 100%
+      .detail-main{
+        margin-top: 64px
+        padding-bottom: 64px
+        .name{
+          font-size: 16px
+          font-weight: 700
+          width: 100%
+          color: rgb(255,255,255)
+          line-height: 16px
+          text-align: center
+        }
+        .star-wrapper{
+          margin: 16px 11px 28px 0
+          text-align: center
+        }
+        .title{
+          display: flex
+          width 80%
+          margin: 0 auto 24px auto
+          .line{
+            display: inline-block
+            flex: 1
+            height: 1px
+            background: rgb(255,255,0.2)  
+            margin: auto
+          }
+          .text{
+            color: rgb(255,255,0.2)
+            padding: 0 12px
+            font-size: 14px
+            font-weight: 700           
+          }  
+        }
+        .supports{
+          padding: 0 0 28px 36px
+          .support-item{
+            color: white
+            padding: 0 6px 12px 16px
+            .text{
+              vertical-align: middle
+              font-size: 12px
+              font-weight 200
+              color rgb(255,255,255)
+              line-height 12px
+            }
+            .icon{
+              display: inline-block
+              vertical-align: top
+              width 16px
+              height 16px
+              margin-right 6px
+              background-size 100% 100%
+              background-repeat no-repeat
+              &.decrease{
+                background-image: url('img/decrease_2@2x.png')
+              }
+              &.discount{
+                background-image: url('img/discount_2@2x.png')
+              }
+              &.guarantee{
+                background-image: url('img/guarantee_2@2x.png')
+              }
+              &.invoice{
+                background-image: url('img/invoice_2@2x.png')
+              }
+              &.special{
+                background-image: url('img/special_2@2x.png')
+              }     
+            }
+          }
+        }
+        .bulletin{
+          padding 0 48px
+          font-size 12px
+          font-weight 200
+          color rgb(255,255,255)
+          line-height 24px
+        }
       }
+    }
+    .detail-close{
+      position relative
+      width 32px
+      height 32px
+      margin -64px auto 0 auto
+      clear both
+      font-size 32px
+      &.fade-enter-active, &.fade-leave-active {
+          transition: opacity 3s
+      }
+      &.fade-enter, &.fade-leave-active {
+          opacity: 0
+      }
+
+    }
   }
 }

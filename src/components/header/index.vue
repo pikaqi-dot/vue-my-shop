@@ -45,9 +45,21 @@
               <div class="text">优惠信息</div>
               <div class="line"></div>
             </div>
-            <div class="detail-close"><i class="iconfont icon-guanbi" @click="hideDetail()" style="color:#C1CDC1"></i></div>
+            <ul v-if="seller.supports" class="supports">
+              <li class="support-item" v-for="item in seller.supports">
+                <span class="icon" :class="iconClassMap[item.type]"></span>
+                <span class="text">{{ item.description }}</span>
+              </li>
+            </ul>
+            <div class="title">
+              <div class="line"> </div>
+              <div class="text">商家公告</div>
+              <div class="line"></div>
+            </div>
+            <div class="bulletin">{{ seller.bulletin }}</div>
           </div>
         </div>
+        <div class="detail-close"><i class="iconfont icon-guanbi" @click="hideDetail()" style="color:#C1CDC1"></i></div>
       </div>
     </transition>
   </div>
@@ -61,7 +73,7 @@ export default {
       type: Object,
     },
   },
-  components:{
+  components: {
     star
   },
   created() {
@@ -81,11 +93,11 @@ export default {
   methods: {
     showDetails() {
       this.detailShow = true;
-      console.log('this.detailShow',this.detailShow);
+      console.log('this.detailShow', this.detailShow);
     },
     hideDetail() {
       this.detailShow = false;
-      console.log('this.detailShow',this.detailShow);
+      console.log('this.detailShow', this.detailShow);
     },
   },
 };
