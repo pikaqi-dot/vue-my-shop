@@ -15,7 +15,7 @@
     "stylus-loader": "^3.0.1",
     "vue": "^2.6.11",
     "vue-router": "3.4.0",
-    "vuex": "^2.1.1"
+    "vuex": "4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
