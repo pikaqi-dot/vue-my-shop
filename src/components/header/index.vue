@@ -104,5 +104,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import 'stylus/index.styl';
+@import 'stylus/index.less';
 </style>

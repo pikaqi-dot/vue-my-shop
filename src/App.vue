@@ -2,7 +2,20 @@
 <template>
   <div id="app">
     <v-header :seller="seller"></v-header>
-    <router-view></router-view>
+    <div class="tab">
+      <div class="tab-item">
+        <router-link to="/goods">商品</router-link>
+      </div>
+      <div class="tab-item">
+        <router-link to="/ratings">评论</router-link>
+      </div>
+      <div class="tab-item">
+        <router-link to="/seller">商家</router-link>
+      </div>
+    </div>
+    <keep-alive>
+      <router-view :seller="seller"></router-view>
+    </keep-alive>
   </div>
 </template>
 
@@ -22,7 +35,7 @@ export default {
   created() {
     axios.get("./static/data.json").then((res) => {
       this.seller = res.data.seller;
-      console.log('this.seller:',this.seller);
+      console.log('this.seller:', this.seller);
     });
   },
 };
