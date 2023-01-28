@@ -1,5 +1,5 @@
 
-> A Vue.js project
+> A Vue.js project[main]
 
 ## Build Setup
 
