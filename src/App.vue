@@ -33,9 +33,8 @@ export default {
     };
   },
   created() {
-    axios.get("./static/data.json").then((res) => {
+    axios.get("static/data.json").then((res) => {
       this.seller = res.data.seller;
-      console.log('this.seller:', this.seller);
     });
   },
 };
